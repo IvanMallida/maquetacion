@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InclusívArte</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 2em;
+            text-align: center;
+        }
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .producto {
+            border: 1px solid #ddd;
+            padding: 1em;
+            text-align: center;
+        }
+        .swiper-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .swiper-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .swiper-slide {
+            flex: 0 0 33.333%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h1>Bienvenidos a InclusívArte</h1>
+        <p>Artesanías con impacto social y experiencias inolvidables.</p>
+    </section>
+
+    <section id="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <p>Explora nuestras piezas más exclusivas.</p>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="destacado1.jpg" alt="Producto destacado 1">
+                <p>Producto Destacado 1 - $600 MXN</p>
+            </div>
+            <div class="producto">
+                <img src="destacado2.jpg" alt="Producto destacado 2">
+                <p>Producto Destacado 2 - $750 MXN</p>
+            </div>
+            <div class="producto">
+                <img src="destacado3.jpg" alt="Producto destacado 3">
+                <p>Producto Destacado 3 - $500 MXN</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide producto">
+                    <img src="producto1.jpg" alt="Artesanía hecha a mano">
+                    <p>Artesanía tejida - $500 MXN</p>
+                </div>
+                <div class="swiper-slide producto">
+                    <img src="producto2.jpg" alt="Vasija de barro pintada">
+                    <p>Vasija tradicional - $350 MXN</p>
+                </div>
+                <div class="swiper-slide producto">
+                    <img src="producto3.jpg" alt="Máscara artesanal">
+                    <p>Máscara tallada - $450 MXN</p>
+                </div>
+                <div class="swiper-slide producto">
+                    <img src="producto4.jpg" alt="Joyería artesanal">
+                    <p>Joyería de plata - $800 MXN</p>
+                </div>
+                <div class="swiper-slide producto">
+                    <img src="producto5.jpg" alt="Escultura de madera">
+                    <p>Escultura tallada - $1,200 MXN</p>
+                </div>
+                <div class="swiper-slide producto">
+                    <img src="producto6.jpg" alt="Alfarería decorada">
+                    <p>Alfarería decorativa - $900 MXN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="talleres">
+        <h2>Talleres</h2>
+        <p>Aprende de los mejores artesanos en nuestros talleres inclusivos.</p>
+    </section>
+    
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: contacto@inclusivarte.com</p>
+    </footer>
+</body>
+</html>
